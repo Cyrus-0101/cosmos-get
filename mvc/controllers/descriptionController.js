@@ -1,9 +1,10 @@
 import asyncHandler from "express-async-handler";
 import { TableClient } from "@azure/data-tables";
+import { AZURE_STORAGE_CONNECTION_STRING } from "../utils/.env.js";
 
 // Setup connection to Azure Table Storage
 const serviceClient = TableClient.fromConnectionString(
-  process.env.AZURE_STORAGE_CONNECTION_STRING, // The connection string to the storage account
+  AZURE_STORAGE_CONNECTION_STRING, // The connection string to the storage account
   process.env.AZURE_STORAGE_TABLE_NAME // The name of the table to create/connect to
 );
 
