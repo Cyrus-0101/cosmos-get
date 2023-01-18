@@ -1,9 +1,9 @@
 import express from "express";
 
-import { getDescription } from "../controllers/decriptionController";
+import { getAllDescriptions } from "../controllers/decriptionController.js";
 
 const router = express.Router();
 
-router.route("/").get(getDescription);
+router.route("/").get(getAllDescriptions);
 
 export default router;
