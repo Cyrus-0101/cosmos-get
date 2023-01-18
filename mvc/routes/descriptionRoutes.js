@@ -1,6 +1,6 @@
 import express from "express";
 
-import { getAllDescriptions } from "../controllers/decriptionController.js";
+import { getAllDescriptions } from "../controllers/descriptionController.js";
 
 const router = express.Router();
 
